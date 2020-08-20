@@ -3,5 +3,10 @@
 {% block content %}
 <h1>About</h1>
 {{ my_name }}
+{% for list in my_list %}
+      <ul>
+        <li>{{ list }}</li>
+      </ul>
+{% endfor %}
 
 {% endblock content %}
