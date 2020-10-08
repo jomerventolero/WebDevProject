@@ -5,7 +5,7 @@
 {{ my_name }}
 {% for list in my_list %}
       <ul>
-        <li>{{ list }}</li>
+        <li>{{ forloop.counter }} = {{ list }}</li>
       </ul>
 {% endfor %}
 

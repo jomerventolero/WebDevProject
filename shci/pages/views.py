@@ -5,6 +5,7 @@ from django.http import HttpResponse
 def home_view(request, *args, **kwargs):
     my_context = {
         'my_name': "Jomer",
-        'my_list': [123, 456, 789]
+        'my_list': [543, 123, 456, 789]
     }
-    return render(request, 'test.html', my_context)
+    # my_context['my_list'].sort()
+    return render(request, 'index.html', my_context)
